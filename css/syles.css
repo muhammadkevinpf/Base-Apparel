@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.welcome {
+  background-image: url(../images/bg-pattern-desktop.svg), linear-gradient(135deg, white, #fff5f5), linear-gradient(135deg, #f8bfbf 0%, #ee8c8c);
+  background-size: cover;
+  padding: 75px 150px;
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+}
+
+.welcome-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 70%;
+}
+
+.welcome-container .typography-header {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1.6rem;
+  color: #413a3a;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.welcome-container .typography-header span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.welcome-container .typography-body {
+  font-weight: 600;
+  color: #ce9797;
+  font-size: 16px;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+.hero-image {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  background-image: url(../images/hero-desktop.jpg);
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.input ::-webkit-input-placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+.input :-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+.input ::-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+.input ::placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+.input #email-subscribe {
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+  border: 1px solid rgba(58, 62, 65, 0.5);
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-weight: 600;
+  color: #ce9797;
+  font-size: 16px;
+  background: transparent;
+  position: relative;
+}
+
+.input #button-subscribe {
+  -webkit-box-flex: 2%;
+      -ms-flex: 2%;
+          flex: 2%;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c);
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  margin-left: -7rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.small-logo {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .welcome {
+    padding: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .welcome-container {
+    padding: 2rem 2.5rem;
+    width: 100vw;
+  }
+  .welcome-container .typography-header {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  .welcome-container .typography-body {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  .hero-image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    min-height: 50vh;
+    background-image: url(../images/hero-mobile.jpg) no-repeat;
+    background-size: 100% 150%;
+  }
+  .logo {
+    display: none;
+  }
+  .small-logo {
+    display: block;
+    background-color: #fff;
+    padding: 1.5rem;
+  }
+  .small-logo img {
+    height: 20px;
+  }
+  .input {
+    height: 3rem;
+  }
+  .input #button-subscribe {
+    -webkit-box-flex: 2%;
+        -ms-flex: 2%;
+            flex: 2%;
+    background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: -5rem;
+  }
+}
+/*# sourceMappingURL=syles.css.map */
