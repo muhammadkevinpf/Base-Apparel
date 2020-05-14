@@ -123,6 +123,15 @@
   position: relative;
 }
 
+.input #icon-error {
+  z-index: 3;
+  position: relative;
+  right: 8rem;
+  top: 1rem;
+  height: 25px;
+  display: none;
+}
+
 .input #button-subscribe {
   -webkit-box-flex: 2%;
       -ms-flex: 2%;
@@ -134,6 +143,18 @@
   margin-left: -7rem;
   z-index: 2;
   cursor: pointer;
+}
+
+.input #button-subscribe:active {
+  -webkit-box-shadow: -1px 14px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -1px 14px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+#warn-error {
+  color: #f96262;
+  margin-top: 0.8em;
+  margin-left: 1.8em;
+  display: none;
 }
 
 .small-logo {
@@ -198,6 +219,13 @@
     border-radius: 30px;
     padding: 10px;
     margin-left: -5rem;
+  }
+  .input #icon-error {
+    top: 0.7rem;
+    right: 6rem;
+  }
+  #warn-error {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=syles.css.map */

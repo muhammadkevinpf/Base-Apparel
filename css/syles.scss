@@ -91,6 +91,16 @@ $mainFont: "Josefin Sans", sans-serif;
     background: transparent;
     position: relative;
   }
+
+  #icon-error {
+    z-index: 3;
+    position: relative;
+    right: 8rem;
+    top: 1rem;
+    height: 25px;
+    display: none;
+  }
+
   #button-subscribe {
     flex: 2%;
     background: $gradient2;
@@ -100,7 +110,17 @@ $mainFont: "Josefin Sans", sans-serif;
     margin-left: -7rem;
     z-index: 2;
     cursor: pointer;
+    &:active {
+      box-shadow: -1px 14px 5px 0px rgba(0, 0, 0, 0.1);
+    }
   }
+}
+
+#warn-error {
+  color: $colorSoft;
+  margin-top: 0.8em;
+  margin-left: 1.8em;
+  display: none;
 }
 
 .small-logo {
@@ -162,5 +182,13 @@ $mainFont: "Josefin Sans", sans-serif;
       padding: 10px;
       margin-left: -5rem;
     }
+    #icon-error {
+      top: 0.7rem;
+      right: 6rem;
+    }
+  }
+
+  #warn-error {
+    text-align: left;
   }
 }
